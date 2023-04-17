@@ -12,6 +12,12 @@
   border-radius: 8.95px;
 }
 
+.bold {
+  font-weight: 600;
+}
+.gray {
+  color: #918E9B;
+}
 .nav{
   display: flex;
   padding: 22px 36px;
@@ -118,13 +124,7 @@
   /* text-edge: cap; */
 }
 .rating span {
-  color: #918E9B;
-  text-decoration: dashed;
   margin-left: 2px;
-}
-
-.cost-person span {
-  font-weight: 600;
 }
 
 .cards{

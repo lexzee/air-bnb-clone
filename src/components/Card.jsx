@@ -13,14 +13,14 @@ const Card = () => {
       <div className='rating'>
         <img src={star} />
         <p>5.0
-        <span>(6) * USA</span>
+        <span className='gray'>(6) * USA</span>
         </p>
       </div>
       <p className='title'>
         Life lessons with Katie Zafares
       </p>
       <p className='cost-person'>
-        <span>From $136</span> / person
+        <span className='bold'>From $136</span> / person
       </p>
     </section>
   )
