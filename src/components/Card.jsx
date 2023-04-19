@@ -9,14 +9,14 @@ const Card = (props) => {
       <div className='img'>
         {/* <div className='img--overlay'> */}
           {/* <img src={pic1} alt='Katie Zaferes' className='card-img'/> */}
-          <img src={`../src/assets/images/${props.img}`} alt='Katie Zaferes' className='card-img'/>
+          <img src={`../src/assets/images/${props.img}`} alt={props.img} className='card-img'/>
           <div>sold out</div>
         {/* </div> */}
       </div>
       <div className='rating'>
         <img src={star} />
         <p>{props.rating}
-        <span className='gray'>({props.reviewCount}) * {props.country}</span>
+        <span className='gray'>({props.reviewCount}) * {props.location}</span>
         </p>
       </div>
       <p className='title'>

@@ -73,11 +73,16 @@
   /* padding: 22px 36px; */
   margin-right: 18px;
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   position: relative;
   border-radius: 9px;
 }
 
+.card > title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .card > .img {
   position: relative;
 }
@@ -129,8 +134,16 @@
 
 .cards{
   display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
   padding: 22px 36px;
 }
+
+.cards::-webkit-scrollbar {
+  display: none;
+}
+
+
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
