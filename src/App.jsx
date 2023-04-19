@@ -18,6 +18,7 @@ function App() {
         location={e.location}
         title={e.title}
         price={e.price}
+        openSpots={e.openSpots}
       />
     )
   })

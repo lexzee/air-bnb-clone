@@ -4,14 +4,19 @@ import star from '../assets/images/star.png'
 // const Card = (props) => {
 const Card = (props) => {
   console.log(props)
+  let tag
+  if (props.openSpots === 0){
+    tag = 'sold out'
+  } else if (props.location === "Online"){
+    tag = 'online'
+  }
+
   return (
     <section className='card'>
+      {tag && <div className='tag'>{tag}</div>}
       <div className='img'>
-        {/* <div className='img--overlay'> */}
-          {/* <img src={pic1} alt='Katie Zaferes' className='card-img'/> */}
           <img src={`../src/assets/images/${props.img}`} alt={props.img} className='card-img'/>
-          <div>sold out</div>
-        {/* </div> */}
+          {/* {!props.openSpots && <div>sold out</div>} */}
       </div>
       <div className='rating'>
         <img src={star} />
