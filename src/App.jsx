@@ -12,13 +12,7 @@ function App() {
     return (
       <Card
         key={i}
-        img={e.coverImg}
-        rating={e.stats.rating}
-        reviewCount={e.stats.reviewCount}
-        location={e.location}
-        title={e.title}
-        price={e.price}
-        openSpots={e.openSpots}
+        {...e}
       />
     )
   })
@@ -26,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <Hero /> */}
+      <Hero />
       <section className='cards'>
         {cards}
         {/* <Card/> */}

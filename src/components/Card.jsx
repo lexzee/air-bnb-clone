@@ -15,13 +15,13 @@ const Card = (props) => {
     <section className='card'>
       {tag && <div className='tag'>{tag}</div>}
       <div className='img'>
-          <img src={`../src/assets/images/${props.img}`} alt={props.img} className='card-img'/>
+          <img src={`../src/assets/images/${props.coverImg}`} alt={props.coverImg} className='card-img'/>
           {/* {!props.openSpots && <div>sold out</div>} */}
       </div>
       <div className='rating'>
         <img src={star} />
-        <p>{props.rating}
-        <span className='gray'>({props.reviewCount}) * {props.location}</span>
+        <p>{props.stats.rating}
+        <span className='gray'>({props.stats.reviewCount}) * {props.location}</span>
         </p>
       </div>
       <p className='title'>
