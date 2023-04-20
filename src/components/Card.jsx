@@ -1,4 +1,3 @@
-import pic1 from '../assets/images/katie-zaferes.png'
 import star from '../assets/images/star.png'
 
 // const Card = (props) => {
